@@ -9,8 +9,8 @@ basedatos = MongoClient(
 # imprime las colecciones creadas
 print(basedatos.list_database_names())
 
-# conecta con la coleccion especificada en este caso raspberry
-collection = basedatos.invernadero.raspberry
+# conecta con la coleccion especificada
+collection = basedatos.basededatosdentrodebasedeatos.coleccion
 
 # insertar un registro
 collection.insert_one({'"temperatura"': '1',
